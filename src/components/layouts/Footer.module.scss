@@ -1,0 +1,14 @@
+@use "@/styles/_partials/_all" as *;
+
+.footer {
+  display: flex;
+  justify-content: center;
+  padding: rem(16);
+  margin-top: rem(70);
+  border-top: solid 1px var(--color-border);
+}
+
+.copyright {
+  font-family: var(--typo-font-roboto);
+  font-size: rem(12);
+}

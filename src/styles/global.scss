@@ -1,0 +1,42 @@
+@use "_reset.scss";
+@use "_base.scss";
+@forward "_partials/_all.scss";
+
+:root {
+  //colors
+  --color-black: #333;
+  --color-white: #fff;
+  --color-gray: #ccc;
+
+  --color-primary: var(--color-black);
+
+  --color-text: var(--color-black);
+  --color-background: var(--color-white);
+  --color-border: var(--color-black);
+
+  //radius
+  --radius-small: 0.25rem;
+  --radius-medium: 0.5rem;
+  --radius-large: 1rem;
+
+  //typography
+  --typo-font-base: "Noto Sans", "Helvetica Neue", arial, "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans", meiryo, sans-serif;
+
+  --typo-size-base: 1rem;
+  --typo-lh-base: 1.6;
+
+  --type-size-h1: 2rem;
+
+  --typo-weight-light: 300;
+  --typo-weight-regular: 400;
+  --typo-weight-medium: 500;
+  --typo-weight-bold: 700;
+
+  @media (width <= 360px) {
+    --typo-size-base: min(4.4444vw, 1rem);
+  }
+  @media (1400px <= width) {
+    --typo-size-base: max(0.8vw, 1rem);
+  }
+}

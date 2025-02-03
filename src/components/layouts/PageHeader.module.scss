@@ -1,0 +1,21 @@
+@use "@/styles/_partials/_all" as *;
+
+.pageHeader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: rem(8) rem(16);
+  background-color: var(--color-background);
+  z-index: 900;
+}
+
+.pageHeader_inner {
+  display: flex;
+  justify-content: center;
+}
+
+.pageHeader_title {
+  font-size: rem(20);
+  font-weight: 500;
+}
