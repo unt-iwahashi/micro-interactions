@@ -1,0 +1,13 @@
+@use "@/styles/_partials/_all" as *;
+
+.cards {
+  display: grid;
+  padding: rem(16);
+  margin-top: -1px;
+  margin-left: -1px;
+  border: 1px solid var(--color-border);
+}
+
+.cards_label {
+  font-size: rem(14);
+}

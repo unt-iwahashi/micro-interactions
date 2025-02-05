@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import { Noto_Sans } from 'next/font/google';
-import style from './layout.module.scss';
 import '@/styles/global.scss';
 import { Header } from '@/components/layouts/Header';
 import { Footer } from '@/components/layouts/Footer';
@@ -23,7 +22,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang='ja'>
       <body className={notoSans.className}>
         <Header />
-        <main className={style.main}>{children}</main>
+        <main>{children}</main>
         <Footer />
       </body>
     </html>

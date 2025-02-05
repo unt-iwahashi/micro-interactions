@@ -1,7 +1,11 @@
+import { Cards } from '../common/Cards';
+
 export const Loading01 = () => {
   return (
     <>
-      <div id='loading_01'>Loading_01</div>
+      <Cards label='Loading_01'>
+        <div>Loading_01_contents</div>
+      </Cards>
     </>
   );
 };

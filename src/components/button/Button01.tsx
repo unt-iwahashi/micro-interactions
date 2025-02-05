@@ -1,7 +1,11 @@
+import { Cards } from '../common/Cards';
+
 export const Button01 = () => {
   return (
     <>
-      <button>Button_01</button>
+      <Cards label='Button_01'>
+        <button>Button_01_contents</button>
+      </Cards>
     </>
   );
 };
