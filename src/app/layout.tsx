@@ -1,6 +1,6 @@
+import '@/styles/global.scss';
 import type { Metadata } from 'next';
 import { Noto_Sans } from 'next/font/google';
-import '@/styles/global.scss';
 import { Header } from '@/components/layouts/Header';
 import { Footer } from '@/components/layouts/Footer';
 

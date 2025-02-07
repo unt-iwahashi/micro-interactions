@@ -11,3 +11,9 @@
 .cards_label {
   font-size: rem(14);
 }
+
+.cards_contents {
+  display: flex;
+  justify-content: center;
+  padding: rem(16);
+}
