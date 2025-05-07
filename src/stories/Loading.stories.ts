@@ -14,7 +14,5 @@ type Story = StoryObj<typeof meta>;
 export default meta;
 
 export const Loading01: Story = {
-  args: {
-    label: 'Loading',
-  },
+  args: {},
 };

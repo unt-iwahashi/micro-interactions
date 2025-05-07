@@ -1,39 +1,29 @@
 @use "@/styles/_partials/_all" as *;
 
 .loading {
-  width: rem(32);
-  height: rem(32);
-  stroke: var(--color-primary);
-  opacity: 0.8;
-  transform-origin: center;
-  animation: animeRotate 1.75s linear infinite;
-  & circle {
-    fill: none;
-    stroke-width: 1;
-    stroke-linecap: round;
-    animation: animeSpinner 1.2s ease-in-out infinite;
+  display: inline-block;
+  @for $i from 1 through 10 {
+    & span:nth-child(#{$i}) {
+      --index: #{$i};
+      display: inline-block;
+      transform: translateY(0);
+      animation: fadeInUp 4s ease infinite;
+      animation-delay: calc(var(--index) * 0.1s);
+    }
   }
-}
-@keyframes animeRotate {
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@keyframes animeSpinner {
-  0% {
-    stroke-dasharray: 0 150;
-    stroke-dashoffset: 0;
-    opacity: 1;
-  }
-  47.5% {
-    stroke-dasharray: 42 150;
-    stroke-dashoffset: -16;
-    opacity: 1;
-  }
-  95%,
-  100% {
-    stroke-dasharray: 42 150;
-    stroke-dashoffset: -59;
-    opacity: 0;
+
+  @keyframes fadeInUp {
+    0% {
+      transform: translateY(0);
+    }
+    3% {
+      transform: translateY(-4px);
+    }
+    6% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(0);
+    }
   }
 }
