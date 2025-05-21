@@ -1,0 +1,9 @@
+@use "@/styles/_partials/_all" as *;
+
+.button01 {
+  width: rem(48);
+  height: rem(48);
+  @include hover {
+    cursor: pointer;
+  }
+}
