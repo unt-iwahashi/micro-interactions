@@ -1,0 +1,9 @@
+@use "@/styles/_partials/_all" as *;
+
+.rating01 {
+  width: rem(160);
+  height: rem(160);
+  @include hover {
+    cursor: pointer;
+  }
+}
